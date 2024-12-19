@@ -1,9 +1,9 @@
 Esa línea utiliza el comando adb para invocar directamente un servicio del sistema Android llamado isms (el servicio responsable de manejar los mensajes SMS).
 
-adb shell service call isms 5 i32 2 s16 "com.android.mms.service" s16 "null" s16 "55514702" s16 "null" s16 "HelloTEST11" s16 "null" s16 "null" i32 1 i32 0
+adb shell service call isms 5 i32 2 s16 "com.android.mms.service" s16 "null" s16 "55xxxxxx" s16 "null" s16 "HelloTEST11" s16 "null" s16 "null" i32 1 i32 0
 
 PARA PODER USAR ESPACIOS EN BLANCO
-adb shell service call isms 5 i32 2 s16 "com.android.mms.service" s16 "Cambell" s16 "55514702" s16 "null" s16 "Mi\ otro\ numero" s16 "null" s16 "null" i32 1 i32 0
+adb shell service call isms 5 i32 2 s16 "com.android.mms.service" s16 "Cambell" s16 "55xxxxxx" s16 "null" s16 "Mi\ otro\ numero" s16 "null" s16 "null" i32 1 i32 0
 
 > Inspeccionar los servicios disponibles con ADB
 Puedes listar los servicios y explorar su información básica con los siguientes comandos:
